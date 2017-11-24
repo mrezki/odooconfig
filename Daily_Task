@@ -1,0 +1,1103 @@
+New Task
+
+fal_crm_wishlist        V
+fal_account_product_variants  V
+fal_purchase_product_variants V
+
+
+Copy beberapa field dari module
+fal_sale_product_variants
+
+Preparation Odoo Ubuntu 
+https://gist.github.com/ayamemi/a6874abb1542d86ba43a8c7d99a29b44
+
+Preparation Odoo Windows 
+https://gist.github.com/ayamemi/
+
+
+Flow Git
+
+get file from git
+git pull 
+
+add file
+git add --all
+
+git commit -m '[FIX] Fixing bug on select order (fal_crm_wishlist, fal_account_product_variants, fal_purchase_product_variants, fal_sale_product_variants)'
+
+git push
+
+fal_purchase_prod_select_form_view10df6b57cd33e1c0dd193bda08f3672a
+
+
+fal_mrp_production_order
+
+Yestar
+terus minta tolong di sale order tambahkan payment method,  selection : cash,  credit
+
+Saas Tool
+http://it-projects-llc.github.io/odoo-saas-tools/getting-started/
+https://odoo-saas-tools.readthedocs.io/en/10.0/
+http://it-projects-llc.github.io/odoo-saas-tools/getting-started/
+
+
+https://github.com/OCA
+
+
+buat stack process
+raise EnvironmentError
+
+
+Note Yestar
+Product Type : Stockable Product
+Tracking : By Unique Serial Number
+Route uncheck Buy and Make To Order
+
+==DEBRANDING ODOO================================================================================================================================
+
+STEP #1 – change your company logo (let’s start from easy…)
+Hover the big Odoo logo on the left side, click on “Edit company data” and give your company your own logo – this will replace the Odoo placeholder logo.
+
+STEP#2 – remove “Powered by Odoo”
+Open the view web.login_layout and comment out following lines:
+
+<!-- <span class="oe_footer_seperator"> | </span> -->
+<!-- <a href="https://www.odoo.com" target="_blank">Powered by <span>Odoo</span></a> -->
+
+Open the view web.menu_secondary and comment out following line:
+<!-- Powered by <a href="http://www.openerp.com" target="_blank"><span>Odoo</span></a> -->
+
+STEP#3 – remove “Odoo support” user for instant messaging
+Goto Settings > Local Modules and uninstall module Odoo Live Support (im_odoo_support)
+
+STEP#4 – remove Odoo announcement top bar
+Empty the openerp_announcement function in addons/mail/static/src/js/announcement.js like this:
+
+openerp_announcement = function(instance) {};
+
+#5 remove the menu items “My Odoo.com Account” . “Help” 
+addons/web/static/src/xml/base.xml and comment out this line:
+
+
+=======================================================================================================================
+YESTAR 20170719
+
+Artha
+root
+1qaZ1234
+
+
+python odoo-bin --addons-path=enterprise,addons,artha_dev -r odoo10 -w odoo10 --xmlrpc-port=8010
+
+python odoo-bin --addons-path=enterprise,addons,artha_dev -r odoo10 -w clean10admin --xmlrpc-port=8010
+
+urutan install
+
+fal_parent_account
+
+
+
+
+add analytic account in account.asset.asset
+
+seperti account.asset.category
+
+
+https://serverfault.com/questions/225155/virtualbox-how-to-set-up-networking-so-both-host-and-guest-can-access-internet
+
+fal_account_asset_analytic
+
+account_asset\models\account_asset.py method create move diinherit
+terus move)vals untuk analytic_account_id disesuaikan dengan field baru yg km bikin
+kalau field baru itu ga keisi, fall back ke analytic account si asset type
+
+bukan diinherit ding, tp dioverride
+
+
+
+NameError: global name 'float_compare' is not defined
+
+
+account.asset.category
+
+
+
+Note:
+Kalo ada module depends from another module, coba di upgrade module yang depends.
+
+
+SSD Drive Gw
+C:F:G
+
+Sisanya data aja.
+
+pass email falinwa
+rezkiganteng
+
+arthaserver
+clean10admin
+
+odoo10
+clean10admin
+
+
+Administrator Atria
+192.168.2.18
+Good123!
+
+ip public set
+103.31.44.141
+
+66.96.234.182
+
+IP Local Artha
+192.168.2.118:8010
+
+
+
+
+pivot for grouping
+
+
+sales order tambah 
+add group by
+
+
+
+
+
+Field
+
+
+Sub Brand char
+Product Type
+Sub Product Type
+Size
+Sub Size
+Variant Code
+
+
+Sub Brand change to Pattern
+
+
+
+Note to Office
+how to super create
+
+
+=CONCATENATE(E2," ",F2," ",H2," ",I2," ",J2," ",N2," ",O2," ",P2)
+
+
+
+minus properties di sales report
+
+
+
+
+
+
+Notes:
+
+- Internal Reference Change to Item Number
+- Add Master for Product
+- Pisah Product Type dan Ply
+- Add new Field TT/TL/CROSS
+- Add PTS MOTOR dan PTS BECO on Field Category for point
+- Warning ketika hapus contact address
+
+
+attrs="{}"
+
+'invisible': ['|',('fal_serie_name_id_type','not in',['V']),('fal_serie_name_id_name','in',['VBL','VBM'])]
+
+
+invisible=[('fal_product_id.name','=','BAN'),('fal_serie_name_id_name','in',['VBL','VBM'])]
+
+attrs="{'invisible': [('fal_related_aluminum', '=', False)]}"
+
+domain="[('company_id', '=', company_id)]"
+
+192.168.56.101
+
+192.168.56.1
+
+10.0.2.15
+
+
+<field name="name" attrs="{'invisible': [('condition1', '=', False)], 'required': [('condition2', '=', True)]}"/><!-- as default it works as AND without any additional '|' or '&'-->
+
+You can use more than two conditions, then you should use '|','|','&' depending on conditions order and what you want to achieve.
+for example 
+
+attrs="{'invisible': [('product_lines_id','!=','Computer'),('product_lines_id','!=','Server')],
+
+'required':['|',('product_lines_id','=','Computer'),('product_lines_id','=','Server')]}"
+
+
+https://ubuntuforums.org/showthread.php?t=2178905
+
+
+
+
+
+125.165.17.196
+
+
+====================================================VIRTUALBOX=================================================================================
+Hey Guys,
+
+i have done the same with below workarounds....
+
+just assume the win7.vmdk is my current Virtual Machine Hdd with 10 GB, so i am creating the Newhardisk.vdi with 20 GB size and cloning the win7 hdd, then attaching to the Machine.
+
+Step 1 : Get into the Virtual Machine Directory with "cd" command,
+
+ex: cd /home/Vbox/Virtualbox Vms/Windows 7
+
+Step 2 : Create the New Virtual Hardisk with below command
+
+VBoxManage createhd --filename Newhardisk.vdi --size 20480
+
+Step 3 : Clone the the image of Existing Hardisk to New one which we created.
+
+VBoxManage clonehd old hardisk.vmdk --existing Newhardisk.vdi
+
+
+Step 4 : After completion of the Clone job, just Remove the win7.vmdk from the VM and attache the newly Created Newhardisk.vdi. to do that follow the options below,
+
+a. Go to Virtualbox Media Manager ---> Select Win7.vmdk ---> Click the "Release" option. then delete it with Remove option and you can keep the Hdd without deleting from the system
+
+b. Open the Machine folder and check the permission of the Created Hardisk. if it doesnt have the proper permission then it gives error while attaching to the machine
+c. Open the Settings of the Virtual Machine ----> Storage ---> Add Hardisk -----> Select the Hardisk which we created.
+
+Step 5 : format the Free space through Disk management and get the new drives or if you want to increase the system folder, then you want to use some kind of tool like gparted, Partition Magic.
+
+Please share if any corrections.
+
+Thanks !!
+
+S. Murugan
+
+
+====================================================END VIRTUALBOX=================================================================================
+
+https://www.odoo.com/forum/help-1/question/how-to-setup-a-regular-postgresql-database-backup-4728
+
+upload download 1:1
+dedicated
+
+buat url report
+http://localhost:8010/report/pdf/fal_sale_atria_report.report_deliveryslip/10
+
+http://localhost:8010/report/pdf/fal_sale_atria_report.report_deliveryslip/20
+
+
+NOTE: Atria
+- Import Invoice
+- config
+- set IP Public on Ubuntu Virtual
+
+
+ubah nama module
+
+fal_partner_atria   ==> changed
+fal_product_brand   ==> changed
+fal_sale_atria_report ==> changed
+l10n_id_fal_atria   ==> changed
+
+template
+artha_
+
+product_brand
+add 
+
+tambah fal_
+
+PG Admin ARtha
+odoo10
+clean10admin
+
+
+
+
+- Faktur bisa beda pemusatan.
+- Pemilihan Company dicombine dengan nama jalan dan daerah  ==> Done
+- Tiap company beda product.
+
+Note: 
+IJ bisa semua product
+AAP hanya MAXXIS
+DAP hanya SWALLOW, IRC, DELIUM, ZENEOS
+
+Access Right Customize
+Set Multi Currrency
+tapi bisa tampil dalam IDR
+Untuk Purchase penambahan field satuan harga IDR dan USD
+
+Report Dot Matrix
+tujuan pembuatan contact custom? apakah satu penagihan?
+total diskon
+Payment term on sale lock.          ==> Done
+
+Tambah fal_credit_limit_customer      ==> Done
+Cannot search Product while sale process    ==> Done
+Decimal Accuracy ==> 2            ==> Done
+
+================================================================Note Artha Module===========================================================
+Tambah Module
+fal_credit_limit_customer
+product price list
+fal_partner_multicompany
+margin (asli odoo install keduanya)
+
+
+Approval di sale process per Trx
+lock description sales ketika selain Batal
+
+input 12 spd eksotik
+
+merah 2
+hijau 2
+
+how to make 1 stock.picking?
+penamaan product supaya bisa di edit.                   ==> Done
+
+penambahan (DEFAULT) on sale Price and Cost             ==> Done
+validasi harga jual tidak boleh kurang dari modal dan barang fifo
+harga average dan harga fifo.
+
+
+untuk tampilan sale order ketika fully invoice yg lunas dan yang belum
+Note dari pak Hendry 20170808:
+biaya tak terduga setelah 3 bulan sampai
+
+
+penamaan product supaya bisa di search.               ==> Done
+penambahan (DEFAULT) on sale Price dan Cost             ==> Done
+lock Payment term di sales form                   ==> Done
+Tambah credit limit per customer                  ==> Done
+Cannot search Product while sale process                ==> Done
+Decimal Accuracy ==> 2                        ==> Done
+Pemilihan Company dicombine dengan nama daerah dan jalan      ==> Done
+
+Buat 1 stock.picking dari banyak sale order             ==> Bisa (Perlu Custom)
+validasi harga jual tidak boleh kurang dari modal dan barang fifo ==> Bisa (Perlu Custom)
+biaya tak terduga setelah 3 bulan sampai              ==> Bisa (Perlu Custom)
+Approval di sale process per Trx                  ==> Bisa (Perlu Custom)
+
+solusi untuk yang bisa  ==> loe liat codingannya di fal_partner credit limit..  itu tinggal tambahin 1 condition
+
+
+https://torrentproject.se
+caligula
+
+aceh
+sabang
+
+nusanet
+0200088319
+
+103.31.44.148
+
+https://www.whatismyip.com/my-ip-information/
+
+set supaya isp nya nusanet
+history harga jual
+
+kriteria
+
+fast moving
+
+
+slow moving
+
+
+on product
+cost price
+add field minimum price
+calculate minimum price dari 
+
+add config sale
+
+
+div class header
+page
+footer
+
+
+group_id
+
+kalo tambah di drop down list langsung aja gak usah inherit.
+
+Print Faktur pindah ke invoice
+
+
+
+Element  cannot be located in parent view
+
+
+kalo tidak di definisikan di view tersebut maka harus cari dari codingan.
+
+
+Manager Discount
+Director Discount
+
+
+sale.config.settings
+
+
+
+inherit res.users
+ganti yg pertama jadi director
+
+Starting service:
+supervisorctl start odoo10
+Stopping service:
+supervisorctl stop odoo10
+
+
+Note : Artha
+add COA Bank Mustika
+di IJ ada gedung COA
+
+Giro sekalian
+
+untuk price list itu binding on line batas minimum dan maksimum
+
+note: DAP
+tambah update sale price di category
+XML default category product
+hide button cancel and scrap on stock.picking
+Change Warehouse to Location
+
+
+
+
+
+
+RHA headset
+
+
+Beli dimana itu?
+
+
+select A.create_date, A.Price_unit, B.partner_id, B.invoice_id, B.origin, b.company_id, b.product_id  from     
+(
+    SELECT w1.create_date, w1.price_unit, w1.product_id
+    FROM
+        (SELECT
+            w2.create_date,
+            w2.price_unit,
+          w2.product_id,
+          lead(w2.price_unit) OVER (ORDER BY w2.create_date DESC) as prev_rainy
+         FROM
+            account_invoice_line w2
+         WHERE product_id = 1059
+         ORDER BY
+            w2.create_date DESC) as w1
+    WHERE
+        w1.price_unit IS DISTINCT FROM w1.prev_rainy 
+    
+    ORDER BY
+        w1.create_date DESC
+) A
+join account_invoice_line B on (A.create_date = b.create_date and a.price_unit=b.price_unit)
+order by a.create_date desc
+
+
+
+HARUS BACA CODING ORIGINAL ODOO
+LIAT LOG
+
+
+Note: Customer Order itu dibuat gerbang sale baru.
+next so nya beda beda
+
+- Bin Location
+
+Model buat single data
+multi buat multiple data
+
+1. Penomoran jangan menggunakan nomor SO, gunakan nomor sendiri
+2. tampilkan informasi AR partner tersebut (total piutang), sisa credit limit
+
+
+Note : For Printing ARTHA=================================================PRINTING-============================================================
+Add new Key on Setting ==> System Parameter
+key   : web.base.url.freeze
+value   : True
+
+Change key web.base.url to be localhost:8010
+coba ngeprint dulu dari server kalo hasilnya masih kurang bagus.
+
+Note : For Printing ARTHA=================================================PRINTING-============================================================
+
+For a many2many field, a list of tuples is expected. Here is the list of tuple that are accepted, with the corresponding semantics:
+
+(0, 0,  { values }) link to a new record that needs to be created with the given values dictionary
+
+(1, ID, { values }) update the linked record with id = ID (write values on it)
+
+(2, ID) remove and delete the linked record with id = ID (calls unlink on ID, that will delete the object completely, and the link to it as well)
+
+(3, ID) cut the link to the linked record with id = ID (delete the relationship between the two objects but does not delete the target object itself)
+
+(4, ID) link to existing record with id = ID (adds a relationship)
+
+(5) unlink all (like using (3,ID) for all linked records)
+
+(6, 0, [IDs]) replace the list of linked IDs (like using (5) then (4,ID) for each ID in the list of IDs)
+
+
+rec._company_default_get(self._name).fal_disc_manager
+
+Clone Git Odoo
+git clone https://github.com/odoo/odoo.git --depth 1 --branch 10.0 --single-branch
+
+Note: Check dependancy itu install DB baru.
+
+
+
+
+do_search_read
+
+rezkiganteng
+
+
+artha.kiki91
+sama kayak email
+mrezki.john
+
+
+
+
+
+
+
+
+
+Password falinwa odoo
+123makanenak
+
+
+
+Note:
+Penomoran Trx Customer Order per company.           Confirm dengan pak erwin    Set di sequence DOne on artha_prod
+Penomoran tiap bulan reset Number.                  Done.
+Set Attribut on Product create.                     Confirm dengan pak erwin    Done
+Use Coordinat to get Location.                      After this fase
+Prepare tonight for customer.                       Set to Company
+Lock sales admin with another rule.                 Done
+Dashboard Tile for sale order.
+Hide Force availability.
+Hide To do
+ukuran kertas nya 215 * 140
+Barang yang belum dilunasi pembayarannya adalah merupakan milik CV. DAP
+Add tanggal jatuh tempo
+add payment term.
+M1 ==> Area code. (Medan 1)
+Automatic Logout after close browser
+
+Custom customer order supaya bisa order partial
+
+
+
+
+
+%(range_year)s/%(month)s/
+attrs="{'readonly':[(uid, '!=', 1)]}"
+
+note pindahin artha_partner/sale_inherit
+
+
+Note:
+harga disc jumlah
+kanan tengah kanan
+
+Add validation while create invoice with same destination
+
+
+Note Artha
+- Add many2one termin to product category
+- validasi create so termin on so while 1 company and 1 product category.
+- credit limit partner. 
+    create object baru isinya company ID, value dan relasikan ke partner one2many
+    pengecekan pertama ke credit limit gelondongan lalu object baru yang spesific on SO
+    pengecekan ketika termin yang gantung lebih dari termin.
+
+
+- install base to print error
+    Traceback (most recent call last):
+  File "/opt/odoo10/odoo/addons/report/controllers/main.py", line 96, in report_download
+    response = self.report_routes(reportname, docids=docids, converter='pdf')
+  File "/opt/odoo10/odoo/odoo/http.py", line 506, in response_wrap
+    response = f(*args, **kw)
+  File "/opt/odoo10/odoo/addons/report/controllers/main.py", line 45, in report_routes
+    pdf = report_obj.with_context(context).get_pdf(docids, reportname, data=data)
+  File "/opt/odoo10/artha_dev/base_report_to_printer/models/report.py", line 46, in get_pdf
+    docids, report_name, html=html, data=data)
+  File "/opt/odoo10/odoo/addons/report/models/report.py", line 178, in get_pdf
+    html = self.with_context(context).get_html(docids, report_name, data=data)
+  File "/opt/odoo10/odoo/addons/report/models/report.py", line 144, in get_html
+    return self.render(report.report_name, docargs)
+  File "/opt/odoo10/odoo/addons/report/models/report.py", line 120, in render
+    return view_obj.render_template(template, values)
+  File "/opt/odoo10/odoo/odoo/addons/base/ir/ir_ui_view.py", line 1043, in render_template
+    return self.browse(self.get_view_id(template)).render(values, engine)
+  File "/opt/odoo10/odoo/addons/web_editor/models/ir_ui_view.py", line 26, in render
+    return super(IrUiView, self).render(values=values, engine=engine)
+  File "/opt/odoo10/odoo/odoo/addons/base/ir/ir_ui_view.py", line 1063, in render
+    return self.env[engine].render(self.id, qcontext)
+  File "/opt/odoo10/odoo/odoo/addons/base/ir/ir_qweb/ir_qweb.py", line 53, in render
+    return super(IrQWeb, self).render(id_or_xml_id, values=values, **context)
+  File "/opt/odoo10/odoo/odoo/addons/base/ir/ir_qweb/qweb.py", line 248, in render
+    self.compile(template, options)(self, body.append, values or {})
+  File "/opt/odoo10/odoo/odoo/addons/base/ir/ir_qweb/qweb.py", line 320, in _compiled_fn
+    element, document = self.get_template(template, options)
+  File "/opt/odoo10/odoo/odoo/addons/base/ir/ir_qweb/qweb.py", line 345, in get_template
+    raise QWebException("load could not load template", name=template)
+QWebException: None
+Traceback (most recent call last):
+  File "/opt/odoo10/odoo/odoo/addons/base/ir/ir_qweb/qweb.py", line 341, in get_template
+    document = options.get('load', self.load)(template, options)
+  File "/opt/odoo10/odoo/odoo/addons/base/ir/ir_qweb/ir_qweb.py", line 81, in load
+    template = env['ir.ui.view'].read_template(name)
+  File "/opt/odoo10/odoo/odoo/addons/base/ir/ir_ui_view.py", line 938, in read_template
+    return self._read_template(self.get_view_id(xml_id))
+  File "<decorator-gen-32>", line 2, in _read_template
+  File "/opt/odoo10/odoo/odoo/tools/cache.py", line 80, in lookup
+    key = key0 + self.key(*args, **kwargs)
+  File "<string>", line 1, in <lambda>
+  File "/opt/odoo10/odoo/odoo/fields.py", line 870, in __get__
+    self.determine_value(record)
+  File "/opt/odoo10/odoo/odoo/fields.py", line 972, in determine_value
+    record._prefetch_field(self)
+  File "/opt/odoo10/odoo/odoo/models.py", line 3066, in _prefetch_field
+    result = records.read([f.name for f in fs], load='_classic_write')
+  File "/opt/odoo10/odoo/odoo/addons/base/res/res_users.py", line 852, in read
+    res = super(UsersView, self).read(other_fields, load=load)
+  File "/opt/odoo10/odoo/odoo/addons/base/res/res_users.py", line 293, in read
+    result = super(Users, self).read(fields=fields, load=load)
+  File "/opt/odoo10/odoo/odoo/models.py", line 3010, in read
+    self._read_from_database(stored, inherited)
+  File "/opt/odoo10/odoo/odoo/models.py", line 3134, in _read_from_database
+    cr.execute(query_str, params)
+  File "/opt/odoo10/odoo/odoo/sql_db.py", line 154, in wrapper
+    return f(self, *args, **kwargs)
+  File "/opt/odoo10/odoo/odoo/sql_db.py", line 231, in execute
+    res = self._obj.execute(query, params)
+InternalError: current transaction is aborted, commands ignored until end of transaction block
+
+
+load could not load template
+Template: 827
+
+- install multi company shared product config
+
+Please select at least one product to create the order
+Pilih setidaknya satu product untuk membuat order
+
+view customer order tambah seperti sale order
+xml set mandatory for payment term om product category
+
+TASK ARTHA
+Add note on Sale Order while approval discount.   Done
+Move check_minimum_price in propose sale order.   Done
+Improve leveling product.
+Update cost base on purchase
+install shipping manifest
+add 3 note: financial note, sales note, delivery note. on Partner.
+
+
+
+flightradar24.com
+
+yonyou and Kingdee ERP China
+
+
+
+BD SW 2.00-17 @50
+
+
+nomor PO tidak di posisi save. jadi nomornya New
+akan jadi nomor ketika confirm PO
+ada menu baru purchase orderline
+
+incoterm pindah ke depan.
+down payment s3
+
+
+BD IRC 3.00/3.60-14 
+
+update cost setelah PO kedua.
+
+
+Product ketika isi tanpa Attribut     Done
+dokument manifest                     Progress
+legal dokumentasi.                    Progress
+asset administration.                 Done
+delivery cost on shipping manifest.   Progress
+material request.                     Done
+porting web_dashboard_tile            Progress
+
+masih salah perhitungan di reward.
+tambah rule customer di reward.
+add reward on customer form.
+create form approval keluar masuk mobil.  
+tambah cash atau credit on customer.      Done
+Advance tambah shipping manifest.         
+
+decimal precision stock jadi 2.           Keterangan decimal accuracy set jadi 2
+validasi di picking cek invoice ID.       Done
+
+claim module from S3
+
+
+rule sale reward.
+sale akan tambah
+claim akan kurangi point
+
+point sale akan dibuat perbulan. tidak ada potong point.
+
+
+
+
+
+
+di product
+tambah flier, spanduk, undangan
+
+
+shipping manifest sama kayak picking
+dari picking ke object baru
+tambah
+
+  estimated date.
+  delivery method.
+  resinya.
+  status.
+  pic.
+
+harganya
+di sale reward pasang domain dy date gimana?
+
+
+pondok gurih katamso
+gumarang katamso
+
+sop kambing 
+
+mbak bolek
+bakso sebelah toko serasi
+
+
+domain="[
+    ('date_start', '&gt;=', parent.date_start),
+    ('date_start', '&lt;=', parent.date_stop),
+    ('date_stop', '&gt;=', parent.date_start),
+    ('date_stop', '&lt;=', parent.date_stop)
+]"
+
+bika ambon 10
+pancake durian 3
+bolu meranti keju 4
+
+
+testing:
+- Buat Customer dengan price Item dan sales purchase.
+Andi
+- Buat Product
+BL SW 20-17 TEST PRODUCT
+- Buat Purchase
+PO00005
+- Buat SQ
+SQ-DAP.17.09-00006
+- Buat SO fron SQ
+SO-DAP-2017/09/005
+  
+
+- Bug on create customer fal_partner_Credit_limit
+- price cost update dengan diskonnya juga
+- install
+- bikin report purchase baru isinya product, partner, average qty
+
+
+Urutan dari setting odoo dengan New DB
+
+- Create DB Baru. (Pilih Country Indonesia)
+  ARTHA_PREPROD_1
+- Set Nama company.
+- install COA company.
+- install module accounting odoo.
+- Set COA company. masuk accounting => setting ==> set coa company.
+
+- install module purchase, sale, stock
+- set config product category inventory ==> setting ==> Product Categories
+SWALLOW
+BD MOTOR
+BL MOTOR
+
+back up DB yg hanya ada data master
+
+set reordering rule di product
+BD SW (GONI) 2.25/2.50-17 @50
+
+ketika pindah dp tulis itu duplikat.
+
+
+- setting costing method Purchase
+- add feature count cost on product
+
+
+
+BD SW (KOTAK) 17-200 (PRODUCT (TEST)) @25
+
+
+
+select             
+    l.product_id as product_id,
+    s.partner_id as partner_id,
+    s.date_order,
+    l.product_qty
+from purchase_order_line l
+    join purchase_order s on (l.order_id=s.id)
+    
+group by
+
+password harjo
+user    welcome
+pass    ayampenyet
+
+
+seting
+
+
+
+===================== Set Beginning Balance Accounting =====================
+
+- get file trial balance.
+- hitung balance debit credit dan accountnya. berdasarkan report trial balance dari client. hitung sampai balance.
+- sama kan COA dari client dengan coa di ODOO
+
+ada feature account_cancel
+
+
+
+All / SWALLOW / PTS
+
+
+BL SW (3.00-8/2PR) @20
+
+
+BD SW (AV) (13X3.00) @80
+BL SW (AV) (13X3.00) @80 
+
+
+https://www.odoo.com/forum/help-1/question/import-data-to-inventory-adjustment-in-odoo-10-111121
+
+no item belum muncul dan urut secara otomatis
+internal category | search more = hanya ada 8 pilihan, create baru | search more = muncul jadi 11
+isian pada field "ply; pattern;properties" tidak muncul di nama item.
+
+ply muncul pas setelah ring dan size
+pattern muncul pas sebelum pattern code
+properties muncul pas setelah sub product type
+isian pada field "product type" seharusnya tidak boleh muncul di nama item
+field product type hanya muncul di category ban luar motor
+
+subtype seharusnya muncul sebelum @, tapi setelah "pattern code"
+
+
+TL SW (PACK) 200-100 PLY PROD TYPE (SUB PROD TYPE)PROPERTIES PATTERN (PATTERN CODE) COLOUR PACK @50 
+
+
+
+sales
+finance
+purchase
+
+
+no item belum urut otomatis. OK
+internal category | search more = hanya ada 8 pilihan, create baru | search more = muncul jadi 11
+internal category masih hanya tampil sebagian di drop down menu, pada saat create item baru
+padahal sudah ada di create category nya, contoh : All / Swallow / Ban Luar Sepeda
+isian pada field "ply; pattern;properties" tidak muncul di nama item.
+ply muncul pas setelah ring dan size. OK
+pattern muncul pas sebelum pattern code. OK
+properties muncul pas setelah sub product type. OK
+isian pada field "product type" seharusnya tidak boleh muncul di nama item
+isian pada field "product type" masih muncul di nama item. "BL SW 80/90-17 METRIC (TL)"
+field product type hanya muncul di category ban luar motor
+field product type masih muncul di kategori ban luar beco dan ban luar sepeda
+subtype seharusnya muncul sebelum @, tapi setelah "pattern code". OK
+nama field product type, hanya dapat pilih (metric atau imperial)
+tidak ada drop down menu, masih ketik manual
+alternatif lain adalah, kata "product type" diubah menjadi >>>
+product type
+(metric / imperial)
+urutan dan nama nya masih belum pas, yakni TL SW 80/90-17 METRIC (TL) SAMURAI (S-168) @1
+seharusnya adalah BL SW 80/90-17 SAMURAI (S-168) (TL) @1
+
+Sequence
+
+SQ.%(y)s.%(month)s-
+
+hal paling berat adalah integarte SO 
+
+untuk import usahakan vlookup ke ID table sumber
+
+
+untuk inventory valuation
+- get cost price per product.
+- update stock di invetory adjustment.
+
+
+
+0 - 30  30 - 60 60 - 90 90 - 120  
+
+artha_so_D17.080936 80936
+artha_so_D17.081214 81214
+
+
+dinamika.artha123
+
+Artha2017
+
+send mail
+2 report financial
+
+<a href="${ctx["base_url"]}/web#action=${ctx["action_id"]}\&id=${account.id}\&view_type=form">${account.name}</a></p>
+<![CDATA[
+              <p>Dear ${(object.name)},<br/><br/>
+              Ada document yang harus di approve.<br/></p>
+              <a href="${ctx["base_url"]}/web#action=${ctx["action_id"]}\&id=${account.id}\&view_type=form">${account.name}</a>
+
+                    Regards,<br/>
+                    ${(object.company_id.name)}
+            ]]>
+
+
+==========================================================================================================================
+fal
+Object baru menu baru
+GIRO
+
+object 
+- giro number
+- bank penerbit
+- customer
+- STatus (draft, confirm)
+- type (giro masuk atau keluar)
+- amount giro.
+- total allocated. total dari total payment giro lines.
+
+add button select invoice, munculkan wizard. isinya many2many
+
+giro Lines:
+- date
+- invoice number 
+- partner
+- total inv
+- total payment
+
+==========================================================================================================================
+
+"""
+                template = self.env['ir.model.data'].get_object(
+                    'fal_partner_credit_limit',
+                    'fal_mail_template_approve_manager4'
+                )
+                mail = self.env['mail.template'].browse(
+                    template.id)
+                values = {
+                    'email_to': dir_user.email
+                }
+                mail.write(values)
+                mail.send_mail(user_id, force_send=True)
+                """
+
+
+                # if not self._context:
+                #     self._context = {}
+                # try:
+                #     template_id = self.env.ref(
+                #         'fal_partner_credit_limit.fal_mail_template_approve_manager4', False).id
+                # except ValueError:
+                #     template_id = False
+
+                # ctx = dict(self._context)
+                # ctx.update({
+                #     'default_model': 'sale.order',
+                #     'default_res_id': self.id,
+                #     'default_use_template': bool(template_id),
+                #     'default_template_id': template_id,
+                #     'default_composition_mode': 'comment',
+                #     'email_to': dir_user.email,
+                # })
+                # return {
+                #     'name': _('Compose Email'),
+                #     'type': 'ir.actions.act_window',
+                #     'view_type': 'form',
+                #     'view_mode': 'form',
+                #     'res_model': 'mail.compose.message',
+                #     'target': 'new',
+                #     'context': ctx,
+                # }
+
+
+http://localhost:8010/web#view_type=form&model=board.board&action=403&menu_id=
+
+
+ada yang jadi voucher atau jadi ban.
+
+note send_mail
+
+ubah unit of measure jadi sale unit of measure
+
+
+BD SW (KTK ) 200-17 @50
+ada di prod template
+gak ada di prod prod
+
+
+set archived product hanya manager
+tambah default category jadi perpetual.
+
+error
+
+File "/Users/budiiskandar/OpenObject/addons/github/falinwa/artha_update_3/artha_shipping_manifest/models/stock.py", line 16, in _set_url_method
+
+self.fal_url_method = self.fal_method_id.url_method  File "/Library/Python/2.7/site-packages/odoo-10.0_20161017-py2.7.egg/odoo/fields.py", line 854, in get    
+record.ensure_one()
+File "/Library/Python/2.7/site-packages/odoo-10.0_20161017-py2.7.egg/odoo/models.py", line 4790, in ensure_one    
+raise ValueError("Expected singleton: %s" % self)ValueError: Expected singleton: stock.picking(10, 11)
+
+
+
+add warehouse and type pindah ke depan SO
+update sale price
+tag location use web
+report accounting (
+  Laporan arus Kas    Cukup berat   (5 Days)
+  aging 15 days
+)
+
+
+[D00892] BD IRC 100/90-17
+
+======ATRIA====
+
+upload product harus dari product.product
+
+update template pake ID.
+
+
+jalanin di server pake user odoo10
+
+
+/opt/odoo10/odoo/odoo-bin -c /etc/odoo10.conf
+
+http://103.31.44.148:8010/web?debug=1#view_type=kanban&model=ir.module.module&menu_id=5&action=37
+
+sudo git reset --hard
+
